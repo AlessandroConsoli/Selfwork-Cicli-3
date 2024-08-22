@@ -19,7 +19,8 @@ do {
                 }
             break;
         default:
-            prompt(`Scelta non valida! \nInserisci il numero corrispondente alla bevanda desiderata`);
+            selected = 0;
+            alert(`Scelta non valida!`);
             break;
     }
-} while (selected < 1 || selected > 3 || typeof selected != Number);
+} while (selected < 1 || selected > 3 || typeof selected != `number`);
